@@ -1,0 +1,162 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: rgb(209, 232, 232);
+  min-height: 100hv;
+  overflow-x: hidden;
+}
+
+/* Inicio de sesión */
+
+.labelInicioSesion {
+  color: white;
+  display: flex;
+  justify-content:center;
+}
+
+label {
+  color: white;
+}
+
+.card {
+  max-width: 400px;
+  margin: 10% auto;
+  border-radius: 10%;
+}
+
+.card-body {
+  background-color: rgb(58, 58, 58);
+  border-radius: 10%;
+}
+
+.botonInicio {
+  background-color: #89b7ef;
+  color: rgb(58, 58, 58);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.botonInicio:hover {
+  background-color: rgb(162, 255, 0);
+}
+
+.botonCerrar {
+  background-color: #eef0f1;
+  color: rgb(58, 58, 58);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.botonCerrar:hover {
+  background-color: rgb(190, 187, 187)
+}
+
+/* Modal inicio de sesión */
+
+.modal-body{
+  background-color: rgb(58, 58, 58);
+}
+
+.modal-header{
+  background-color: rgb(58, 58, 58);
+}
+
+.modal-footer{
+  background-color: rgb(58, 58, 58);
+}
+
+.modal-title{
+  color: white;
+}
+
+/* .derecha {
+  display: flex;
+  justify-content: end;
+} */
+
+/* Dashboard */
+
+.bienvenido {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.barra-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 100;
+  background-color: rgb(58, 58, 58);
+}
+
+/* Extra */
+
+.navegacion button {
+  text-decoration: none;
+  color: #c9ced5;
+  margin: 0 10px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s all;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: none;
+	border: none;
+	padding: 0;
+	outline: inherit;
+}
+
+.navegacion button:hover {
+  color: rgb(162, 255, 0);
+}
+
+.navegacion button::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: rgb(162, 255, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.navegacion button:hover::after {
+  width: 100%;
+}
+
+@keyframes shake {
+  0% {
+      margin-left: 0rem;
+  }
+  25% {
+      margin-left: 0.5rem;
+  }
+  75% {
+      margin-left: -0.5rem;
+  }
+  100% {
+      margin-left: 0rem;
+  }
+}
+
+.shake {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
